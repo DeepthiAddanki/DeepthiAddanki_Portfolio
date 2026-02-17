@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Deepthi Addanki — Fleetrace, Machine Failure Prediction, and more Full Stack & ML projects." />
+  <meta name="author" content="Deepthi Addanki" />
+  <title>Projects — Deepthi Addanki</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>" />
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Deepthi Addanki Home">
+      Deepthi <span>Addanki</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"    data-nav>Home</a></li>
+      <li><a href="about.html"    data-nav>About</a></li>
+      <li><a href="projects.html" data-nav>Projects</a></li>
+      <li><a href="contact.html"  data-nav>Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+  <ul role="list">
+    <li><a href="index.html"    data-nav>🏠 Home</a></li>
+    <li><a href="about.html"    data-nav>👩‍💻 About</a></li>
+    <li><a href="projects.html" data-nav>🚀 Projects</a></li>
+    <li><a href="contact.html"  data-nav>📬 Contact</a></li>
+  </ul>
+</div>
+
+<!-- ═══ PAGE HERO ════════════════════════════════════════════ -->
+<main class="page-content">
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-tag reveal">Portfolio</div>
+      <h1 class="page-hero-title reveal reveal-delay-1">Projects &amp;<br>Creations</h1>
+      <p class="page-hero-desc reveal reveal-delay-2">
+        Engineered. Intelligent. Impactful.
+      </p>
+    </div>
+    <div class="orb orb-1" style="opacity:0.18;" aria-hidden="true"></div>
+    <div class="orb orb-3" style="opacity:0.15;" aria-hidden="true"></div>
+  </section>
+
+  <!-- ═══ PROJECTS ══════════════════════════════════════════ -->
+  <section class="projects-section" aria-labelledby="projects-heading">
+    <div class="container">
+
+      <p class="section-subtitle reveal">Featured Work</p>
+      <h2 class="section-title reveal reveal-delay-1" id="projects-heading">What I've Built</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Fleetrace ─────────────────────── -->
+        <article class="glass-strong project-card reveal" aria-labelledby="proj1-title">
+          <span class="project-status">Live</span>
+
+          <div class="project-icon-wrap" aria-hidden="true">🚗</div>
+
+          <h3 class="project-name" id="proj1-title">Fleetrace</h3>
+
+          <p class="project-desc">
+            Fleetrace is a web-based internal live vehicle tracking system designed to help organizations efficiently monitor and manage their vehicles in real time. The system enables administrators to track the live geographic location of vehicles using GPS coordinates visualized on Leaflet.js. Fleetrace is intended strictly for internal administrative use, making it suitable for driving schools, training institutes, and small organizations that require a simple and cost-effective tracking solution.
+          </p>
+
+          <div class="project-tags" role="list" aria-label="Tech stack">
+            <span class="project-tag" role="listitem">HTML/CSS/JS</span>
+            <span class="project-tag" role="listitem">FastAPI</span>
+            <span class="project-tag" role="listitem">Supabase(PostgreSQL)</span>
+            <span class="project-tag" role="listitem">Leaflet + OpenStreetMaps</span>
+            <span class="project-tag" role="listitem">REST API</span>
+          </div>
+
+          <!-- Feature highlights -->
+          <ul style="list-style:none; margin-bottom:1.75rem; display:flex; flex-direction:column; gap:0.5rem;">
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#4dffa0; flex-shrink:0; margin-top:2px;">✓</span>
+              Built a near real-time fleet tracking system using FastAPI, PostgreSQL, and Leaflet.
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#4dffa0; flex-shrink:0; margin-top:2px;">✓</span>
+              Implemented JWT authentication, role-based routing, and HTTP-only cookie security.
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#4dffa0; flex-shrink:0; margin-top:2px;">✓</span>
+             Developed live GPS tracking with periodic updates and PostgreSQL UPSERT logic.
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#4dffa0; flex-shrink:0; margin-top:2px;">✓</span>
+             Created admin dashboard with dynamic map visualization and status-based markers.
+            </li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/DeepthiAddanki/Fleetrace" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary btn-sm" aria-label="View Fleetrace on GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://fleetrace.vercel.app/signup" class="btn btn-glass btn-sm" aria-label="View live demo (coming soon)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Project 2: Machine Failure Prediction ───── -->
+        <article class="glass-strong project-card reveal reveal-delay-1" aria-labelledby="proj2-title">
+          <span class="project-status" style="background:rgba(136,51,255,0.15); border-color:rgba(136,51,255,0.3); color:#cc88ff;">ML Model</span>
+
+          <div class="project-icon-wrap" style="background:rgba(136,51,255,0.2); border-color:rgba(136,51,255,0.3);" aria-hidden="true">🤖</div>
+
+          <h3 class="project-name" id="proj2-title">Machine Failure Prediction</h3>
+
+          <p class="project-desc">
+            This project focuses on predictive maintenance using machine learning to forecast machine failures based on sensor data such as air temperature, process temperature, torque, tool wear, and rotational speed. The system classifies machine conditions into multiple categories including No Failure, Power Failure, Tool Wear Failure, Overstrain Failure, Random Failures, and Heat Dissipation Failure.
+          </p>
+
+          <div class="project-tags" role="list" aria-label="Tech stack">
+            <span class="project-tag" role="listitem">Python</span>
+            <span class="project-tag" role="listitem">Pandas</span>
+            <span class="project-tag" role="listitem">NumPy</span>
+            <span class="project-tag" role="listitem">Matplotlib</span>
+            <span class="project-tag" role="listitem">Scikit-Learn</span>
+            <span class="project-tag" role="listitem">Random Forest</span>
+            <span class="project-tag" role="listitem">Django</span>
+            <span class="project-tag" role="listitem">Anaconda/Jupyter Notebook</span>
+          </div>
+
+          <!-- Feature highlights -->
+          <ul style="list-style:none; margin-bottom:1.75rem; display:flex; flex-direction:column; gap:0.5rem;">
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+             Compared Random Forest, Gradient Boosting, and Naïve Bayes algorithms
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Evaluated performance using Accuracy, Precision, Recall, and F1-score
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Built web interface using Django for real-time prediction
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Achieved high predictive accuracy (99.9%) with Random Forest algorithm for proactive maintenance
+            </li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/DeepthiAddanki/Major-Project" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary btn-sm" style="background:linear-gradient(135deg,#5522bb,#8833ff);" aria-label="View Machine Failure Prediction on GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+              </svg>
+              GitHub
+            </a>
+            <!-- <a href="#" class="btn btn-glass btn-sm" aria-label="View ML notebook demo (coming soon)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+              Notebook
+            </a> -->
+          </div>
+        </article>
+        <!-- ── Project 3: ISRO ───── -->
+        <article class="glass-strong project-card reveal reveal-delay-1" aria-labelledby="proj2-title">
+          <span class="project-status" style="background:rgba(136,51,255,0.15); border-color:rgba(136,51,255,0.3); color:#cc88ff;">ISRO Intern</span>
+
+          <div class="project-icon-wrap" style="background:rgba(136,51,255,0.2); border-color:rgba(136,51,255,0.3);" aria-hidden="true">🛰</div>
+
+          <h3 class="project-name" id="proj2-title"> AI-Based Radar Track Data Filtering (ISRO Internship)</h3>
+
+          <p class="project-desc">
+            During my internship at ISRO, I worked on AI-based filtering techniques to improve radar track data accuracy by reducing noise and false detections in tracking systems.
+          </p>
+
+          <div class="project-tags" role="list" aria-label="Tech stack">
+            <span class="project-tag" role="listitem">Python</span>
+            <span class="project-tag" role="listitem">Pandas</span>
+            <span class="project-tag" role="listitem">NumPy</span>
+            <span class="project-tag" role="listitem">Machine Learning Algorithms</span>
+            <span class="project-tag" role="listitem">Data Preprocessing Techniques</span>
+            <span class="project-tag" role="listitem">Pattern Recognition</span>
+            <span class="project-tag" role="listitem">Signal/Data Filtering Methods</span>
+            <span class="project-tag" role="listitem">Anaconda/Jupyter Notebook</span>
+          </div>
+
+          <!-- Feature highlights -->
+          <ul style="list-style:none; margin-bottom:1.75rem; display:flex; flex-direction:column; gap:0.5rem;">
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+             Processed and cleaned radar tracking datasets
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Applied ML techniques to filter noisy radar tracks
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Improved data reliability and prediction consistency
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Assisted in optimizing radar data analysis workflow
+            </li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7305089918072983552/" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary btn-sm" style="background:linear-gradient(135deg,#5522bb,#8833ff);" aria-label="View Internship Completion Certificate ">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <!-- <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/> -->
+              </svg>
+              Certificate
+            </a>
+            <!-- <a href="#" class="btn btn-glass btn-sm" aria-label="View ML notebook demo (coming soon)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+              Notebook
+            </a> -->
+          </div>
+        </article>
+
+        <!-- ── Project 4: Portfolio ───── -->
+        <article class="glass-strong project-card reveal reveal-delay-1" aria-labelledby="proj2-title">
+          <span class="project-status" style="background:rgba(136,51,255,0.15); border-color:rgba(136,51,255,0.3); color:#cc88ff;">Portfolio Website</span>
+
+          <div class="project-icon-wrap" style="background:rgba(136,51,255,0.2); border-color:rgba(136,51,255,0.3);" aria-hidden="true">🌐</div>
+
+          <h3 class="project-name" id="proj2-title">Personal Portfolio Website</h3>
+
+          <p class="project-desc">
+            A responsive personal portfolio website built to showcase projects, technical skills, and professional experience. Designed with modern UI principles and smooth interactive components.
+          </p>
+
+          <div class="project-tags" role="list" aria-label="Tech stack">
+            <span class="project-tag" role="listitem">HTML5</span>
+            <span class="project-tag" role="listitem">CSS3</span>
+            <span class="project-tag" role="listitem">JavaScript</span>
+            <span class="project-tag" role="listitem">Responsive Design</span>
+            <span class="project-tag" role="listitem">Github Deployment</span>
+            
+          </div>
+
+          <!-- Feature highlights -->
+          <ul style="list-style:none; margin-bottom:1.75rem; display:flex; flex-direction:column; gap:0.5rem;">
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+             Designed glassmorphism-based UI layout
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Implemented scroll animations and dynamic navigation
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Built responsive design for mobile and desktop
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.875rem; color:var(--silver-dim);">
+              <span style="color:#cc88ff; flex-shrink:0; margin-top:2px;">✓</span>
+              Deployed publicly using GitHub
+            </li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7305089918072983552/" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary btn-sm" style="background:linear-gradient(135deg,#5522bb,#8833ff);" aria-label="View Internship Completion Certificate ">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <!-- <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/> -->
+              </svg>
+              Certificate
+            </a>
+            <!-- <a href="#" class="btn btn-glass btn-sm" aria-label="View ML notebook demo (coming soon)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+              Notebook
+            </a> -->
+          </div>
+        </article>
+
+        <!-- ── Project : Placeholder ──────────────────── -->
+        <article class="glass project-card reveal reveal-delay-2" aria-labelledby="proj3-title" style="border-style:dashed; border-color:rgba(255,255,255,0.12); opacity:0.75;">
+          <div class="project-icon-wrap" style="background:rgba(255,255,255,0.06);" aria-hidden="true">✦</div>
+          <h3 class="project-name" id="proj3-title" style="color:var(--silver-dim);">More Projects Coming</h3>
+          <p class="project-desc" style="font-style:italic;">
+            Currently working on exciting new projects that blend full-stack engineering with intelligent systems. Stay tuned — the best is yet to come.
+          </p>
+          <div class="project-links" style="margin-top:auto;">
+            <a href="https://github.com/DeepthiAddanki" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm" aria-label="View all projects on GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              View GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ─── Tech Stack Banner ──────────────────────────── -->
+      <div style="margin-top:5rem;">
+        <p class="section-subtitle reveal" style="text-align:center;">Technologies I Work With</p>
+        <h3 class="section-title reveal reveal-delay-1" style="text-align:center; font-size:clamp(1.5rem,3vw,2.2rem);">My Tech Arsenal</h3>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 2.5rem;"></div>
+
+        <div class="glass reveal" style="padding:2rem; border-radius:16px; display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center;">
+          <!-- Frontend -->
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> HTML5</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> CSS3</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> JavaScript</span>
+          <!-- Backend -->
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> Python</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> FastAPI</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> Django</span>
+          <!-- Database -->
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> PostgreSQL (Supabase)</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> SQLite</span>
+          <!-- ML -->
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> Scikit-Learn</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> Pandas</span>
+          <!-- Tools -->
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> Git / GitHub</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> REST APIs</span>
+          <span class="skill-tag" style="padding:0.4em 1em; font-size:0.85rem;"> Leaflet.js</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; margin-top:4rem;" class="reveal">
+        <p style="font-size:1.1rem; color:var(--silver-dim); margin-bottom:1.5rem;">
+          Interested in collaborating or learning more?
+        </p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">
+            <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            Get In Touch
+          </a>
+          <a href="https://github.com/DeepthiAddanki" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            All Repos
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">Deepthi Addanki</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/deepthi-addanki/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/DeepthiAddanki" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
